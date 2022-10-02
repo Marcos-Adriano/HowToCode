@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* color:rgb(240, 116, 0); */
+	font-family: 'Comfortaa', sans-serif;
+
+}
+
+body{
+	background :rgb(18, 18, 20);
+}
+
+form{
+	background: rgba(31, 28, 27, 0.966);
+}
+
+.form-container{
+	border-radius: 5px;
+	padding: 30px;
+	box-shadow: 0px 0px 10px 0px;
+}
+
+.bg{
+
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top:-35px;
+	left: 40%;
+	border-radius: 50%;
+}
+
+.wrapper{
+	border-radius: 5px;
+	padding: 30px;
+	box-shadow: 0px 0px 10px 0px;
+	background: rgba(31, 28, 27, 0.966);
+}
