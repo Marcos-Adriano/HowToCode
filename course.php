@@ -22,6 +22,12 @@
 	<body style="font-family: 'Comfortaa', sans-serif;">
 
 		<header>
+		<h1>HowtoCode</h1>
+			<style>
+				h1 {
+					padding-left: 50px;
+				}
+			</style>
 			<style type="text/css">
 					.label-vitalicio{
 								position: absolute;
@@ -37,9 +43,9 @@
 							}
 				</style>
 			<div class="center">
-				<div >
+				<!-- <div >
 					<a href="#" style="list-style:none; ">HTC</a>
-				</div>
+				</div> -->
 			<div class="grp-header">
 				<nav class="desktop">
 				<ul>
