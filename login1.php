@@ -10,7 +10,7 @@
     </head>
 
     <body>
-        <!-- <div class="container mt-5">
+        <div class="container mt-5">
             <div class="row align-items-center">
                 <div class="mx-auto">
                     
@@ -22,7 +22,7 @@
                     </form>
                 </div>
             </div>
-        </div> -->
+        </div>
 
         <div class="container-fluid">
             <div class="row justify-content-center mt-5" >

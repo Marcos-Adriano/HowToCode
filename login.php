@@ -1,9 +1,13 @@
+
+
+
+
 <?php
 
     $email = $_POST["email"];
     $password = $_POST["password"];
 
-    try {
+    try {          // aqui está inicializando a conexao com o banco de dados 
         $pdo = new PDO("mysql:host=localhost;dbname=courses_plataform", 'root', '');
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         // echo "Conexão bem sucedida!";
