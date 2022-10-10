@@ -1,0 +1,9 @@
+{
+    "name":"plataforma/htc",
+    "autoload":{
+        "psr-4":{
+            "App\\":"app/"
+            
+        }
+    }
+}
