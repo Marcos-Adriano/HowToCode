@@ -1,7 +1,7 @@
 <main>
     <section>
-        <a href="index.php">
-            <button class="btn btn-primary mt-5">Voltar</button>
+        <a href="pagina.php">
+            <button class="btn btn-primary mt-3">Voltar</button>
         </a>
     </section>
     <h2 class="mt-3"><?=TITLE?></h2>

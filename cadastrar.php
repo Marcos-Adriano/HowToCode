@@ -8,14 +8,6 @@ define('TITLE','Cadastrar curso');
 
 $obCourse = new Course;
 
-// $course_id;
-// $course_name;
-// $course_description;
-// $course_isActive;
-// $course_instructor;
-// $course_numberClasses;
-// $course_hours;
-
 if(isset($_POST['course_name'], $_POST['course_instructor'], $_POST['course_description'], $_POST['course_numberClasses'], $_POST['course_hours'])){
     
     $obCourse->course_name = $_POST['course_name'];
@@ -25,7 +17,7 @@ if(isset($_POST['course_name'], $_POST['course_instructor'], $_POST['course_desc
     $obCourse->course_hours = $_POST['course_hours'];
     $obCourse->cadastrar();
 
-    header('location:pagina.php?status=success');
+    header('location: pagina.php?status=success');
     exit;
 }
 

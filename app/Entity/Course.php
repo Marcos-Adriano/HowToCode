@@ -16,16 +16,10 @@ class Course{
     public $course_hours;
 
     public function cadastrar(){
-        $this->data = date('Y-m-d H:i:s');
+        // $this->data = date('Y-m-d H:i:s');
 
         $obDatabase = new Database('course');
-        $this->course_id = $obDatabase->insert([
-                                'course_name' => $this->course_name,
-                                'course_instructor' => $this->course_instructor,
-                                'course_description' => $this->course_description,
-                                'course_numberClasses' => $this->course_numberClasses,
-                                'course_hours' => $this->course_hours 
-                            ]);
+        $this->course_id = $obDatabase->insert(['course_name' => $this->course_name, 'course_instructor' => $this->course_instructor, 'course_description' => $this->course_description, 'course_numberClasses' => $this->course_numberClasses, 'course_hours' => $this->course_hours ]);
 
         return true;
     }
@@ -37,8 +31,11 @@ class Course{
                                                 'course_description' => $this->course_description,
                                                 'course_numberClasses' => $this->course_numberClasses,
                                                 'course_hours' => $this->course_hours 
-
         ]);
+    }
+
+    public function excluir(){
+        return(new Database('course'))->delete('course_id = '.$this->course_id);
     }
 
     public static function getCourses($where = null, $order = null, $limit = null){
