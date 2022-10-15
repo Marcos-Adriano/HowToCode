@@ -25,7 +25,8 @@ class Database{
             $this->connection = new PDO('mysql:host='.self::HOST.';dbname='.self::NAME,self::USER,self::PASS);
             $this->connection->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
         } catch (PDOException $e) {
-            die('ERROR:'.$e->getMessage());
+            // die('ERROR:'.$e->getMessage());
+            die('Erro: Não foi possível conectar com o banco de dados!');
         }
     }
 
@@ -35,7 +36,8 @@ class Database{
             $statement->execute($params);
             return $statement;
         } catch (PDOException $e) {
-            die('ERROR: '.$e->getMessage());
+            // die('ERROR: '.$e->getMessage());
+            die('Erro: Contate o administrador!');
         }
     }
 
